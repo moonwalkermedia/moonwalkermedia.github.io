@@ -13,21 +13,48 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
+
+timezone: Australia/Canberra
+permalink: pretty
+defaults:
+    - scope:
+        path: ""
+      values:
+          layout: "default"
+
+# Colours
+# Yellow
+yellow_colour: '#d4aa21'
+light_yellow_colour: '#cfb348'
+
+# Teal
+teal_colour: '#4ab79f'
+light_teal_colour: '#99bfb7'
+
+# Black
+black_colour: '#000000'
+
+# Cream
+dark_cream_colour: '#ded0bf'
+light_cream_colour: '#ece1d4'
+
+title: Moon Walker Media
+email: moonwalkermedia5@gmail.com 
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+    Two freelance content creators - Mikey Burford and Britt Jessup. Cinematography | Editing
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: 
+github_username: 
 
 # Build settings
 markdown: kramdown
+theme: null
 plugins:
   - jekyll-feed
+
+include:
+    - _includes
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

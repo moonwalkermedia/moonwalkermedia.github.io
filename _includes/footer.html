@@ -1,0 +1,8 @@
+<footer class="footer">
+    <hr class=divider>
+    <ul>
+        {% for item in site.data.footer %}
+        <li><a href="{{ item.link }}" aria-label="{{ item.desc }}"><i class="{{ item.icon }}" aria-hidden="true"></i></a></li>
+        {% endfor %}
+    </ul>
+</footer>

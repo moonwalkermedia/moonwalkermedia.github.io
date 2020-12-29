@@ -1,0 +1,6 @@
+- link: "mailto: moonwalker5@gmail.com"
+  icon: "fa fa-envelope"
+  desc: "Link to our email"
+- link: "tel:0472-702-368"
+  icon: "fa fa-phone"
+  desc: "Link to our mobile number"
