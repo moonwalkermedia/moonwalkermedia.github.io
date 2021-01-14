@@ -160,7 +160,7 @@ div.cardparent {
         max-width: 50%;
         min-width: 50%;
         width: 50%;
-        font-size: 1vw;
+        font-size: calc(8px + 1vw);
         div.cardtitle {
             min-width: 50%;
             text-align: left;
