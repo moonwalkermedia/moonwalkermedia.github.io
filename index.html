@@ -1,8 +1,8 @@
 ---
 title: Home
 ---
-<video class=showreel autoplay controls>
-    <source src="/_includes/assets/videos/Showreel.mp4">
+<video controls autoplay>
+    <source src="/_includes/assets/videos/ShowreelCompressed.mp4">
     Your browser does not support the video tag.
 </video>
 <hr style="color: {{ site.dark_cream_colour }}; width: 75%;"/>
@@ -10,14 +10,12 @@ title: Home
 <div class=cardparent>
 {% for item in site.data.films %}
     <div class=card>
-        <video class=card controls>
-            <source src={{ item.vid }}>
-            Your browser does not support the video tag.
-        </video>
         <div class=cardtitle>
             <h2>{{ item.title }}</h2><br>{{ item.desc }}
         </div>
+        <video controls>
+            <source src={{ item.vid }}>
+        </video>
     </div>
 {% endfor %}
 </div>
-    
